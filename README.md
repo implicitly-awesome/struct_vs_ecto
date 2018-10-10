@@ -1,3 +1,4 @@
+```
 Operating System: macOS
 CPU Information: Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz
 Number of Available Cores: 8
@@ -20,3 +21,4 @@ Ecto Schema       156.11 K        6.41 μs   ±277.71%           6 μs          
 Comparison:
 Plain Struct      424.44 K
 Ecto Schema       156.11 K - 2.72x slower
+```
