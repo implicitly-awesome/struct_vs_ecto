@@ -1,21 +1,22 @@
-# StructVsEcto
+Operating System: macOS
+CPU Information: Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz
+Number of Available Cores: 8
+Available memory: 16 GB
+Elixir 1.7.3
+Erlang 20.3.2
 
-**TODO: Add description**
+Benchmark suite executing with the following configuration:
+warmup: 2 s
+time: 5 s
+memory time: 0 μs
+parallel: 1
+inputs: none specified
+Estimated total run time: 14 s
 
-## Installation
+Name                   ips        average  deviation         median         99th %
+Plain Struct      424.44 K        2.36 μs   ±940.79%           2 μs           7 μs
+Ecto Schema       156.11 K        6.41 μs   ±277.71%           6 μs          16 μs
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `struct_vs_ecto` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:struct_vs_ecto, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/struct_vs_ecto](https://hexdocs.pm/struct_vs_ecto).
-
+Comparison:
+Plain Struct      424.44 K
+Ecto Schema       156.11 K - 2.72x slower
